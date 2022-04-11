@@ -1,60 +1,25 @@
                                        <!-- Question 01:  -->
 
-<?php
-//$arr = array[12,34,2,6,78];//index array
-// $num = 12;  
-// $count=0;  
-// for ( $i=1; $i<=$num; $i++)  
-// {  
-// if (($num%$i)==0)  
-// {  
-// $count++;  
-// }  
-// }  
-// if ($count<3)  
-// {  
-// echo "$num is a prime number."."<br>";  
-// }
-// else
-// {
-// echo "$num is not a prime number."."<br>"; 
-// }
-// $num = 34;  
-// $count=0;  
-// for ( $i=1; $i<=$num; $i++)  
-// {  
-// if (($num%$i)==0)  
-// {  
-// $count++;  
-// }  
-// }  
-// if ($count<3)  
-// {  
-// echo "$num is a prime number."."<br>";  
-// }
-// else
-// {
-// echo "$num is not a prime number."."<br>"; 
-// }
-// $num = 2;  
-// $count=0;  
-// for ( $i=1; $i<=$num; $i++)  
-// {  
-// if (($num%$i)==0)  
-// {  
-// $count++;  
-// }  
-// }  
-// if ($count<3)  
-// {  
-// echo "$num is a prime number."."<br>";  
-// }
-// else
-// {
-// echo "$num is not a prime number."."<br>"; 
-// }
+$given_arr = [12, 34, 2, 6, 78]; // Given Array Type : Indexed Array.
+foreach ( $given_arr as $value ) {
+    $numbers = $value;
+    
+    $flag = 0;
+    // $flag variable taken to check condition true or false
+    for ( $i = 2; $i < $numbers; $i++ ) {
+        if ( $numbers % $i == 0 ) {
+            // if given numbers are divisible by 2 then value of flag will be 1
+            $flag++;
+            break;
+        }
 
- ?>
+    }
+    // if value of flag is remain zero then it proves that number is not divisible by 2
+    if ( $flag == 0 ) {
+        echo $numbers . " is a prime Number" . "<br>";
+    }
+    
+}
 <br>
 <br>
 <br>
