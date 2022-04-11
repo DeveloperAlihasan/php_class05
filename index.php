@@ -33,13 +33,15 @@ $daraz = array (
   array("Vivo",20,18),
   array("oppo",18,13),
   array("samsung",15,12),
-  array("tecno",17,15)
+  array("tecno",17,15),
+   array("walton",7,5) 
 );
   
 echo $daraz[0][0].": In stock: ".$daraz[0][1].", sold: ".$daraz[0][2].".<br>";
 echo $daraz[1][0].": In stock: ".$daraz[1][1].", sold: ".$daraz[1][2].".<br>";
 echo $daraz[2][0].": In stock: ".$daraz[2][1].", sold: ".$daraz[2][2].".<br>";
 echo $daraz[3][0].": In stock: ".$daraz[3][1].", sold: ".$daraz[3][2].".<br>";
+echo $daraz[4][0].": In stock: ".$daraz[4][1].", sold: ".$daraz[4][2].".<br>";
 
 
 ?>
